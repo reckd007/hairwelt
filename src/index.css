@@ -13,8 +13,7 @@ button { color: inherit; font: inherit; }
 .navbar { position: absolute; top: 0; z-index: 10; width: 100%; color: #f8f2e7; }
 .nav-inner { width: min(1320px, calc(100% - 64px)); height: 94px; margin: auto; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.18); }
 .brand { display: flex; align-items: center; gap: 0; }
-.brand-logo { height: 88px; width: auto; max-width: 360px; object-fit: contain; display: block; transition: filter .45s ease; }
-.app.light .brand-logo { filter: invert(1); }
+.brand-logo { height: 88px; width: auto; max-width: 360px; object-fit: contain; display: block; }
 .nav-links { display: flex; gap: 34px; margin-left: auto; margin-right: 54px; font-size: 12px; color: rgba(255,255,255,.7); }
 .nav-links a, .text-link, .footer-grid a { transition: color .25s ease; }
 .nav-links a:hover, .footer-grid a:hover { color: var(--gold-light); }

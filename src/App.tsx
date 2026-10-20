@@ -19,15 +19,15 @@ import {
   X,
 } from 'lucide-react';
 
-/* ─── Images — all men / barber imagery ───────────────────────────────── */
-const heroImage      = 'https://images.pexels.com/photos/5970247/pexels-photo-5970247.jpeg?auto=compress&cs=tinysrgb&w=1800';
-const interiorImage  = 'https://images.pexels.com/photos/13138585/pexels-photo-13138585.jpeg?auto=compress&cs=tinysrgb&w=1200';
-const beardImage     = 'https://images.pexels.com/photos/3998427/pexels-photo-3998427.jpeg?auto=compress&cs=tinysrgb&w=900';
-const colourImage    = 'https://images.pexels.com/photos/3037244/pexels-photo-3037244.jpeg?auto=compress&cs=tinysrgb&w=900';
-const groomImage     = 'https://images.pexels.com/photos/6007400/pexels-photo-6007400.jpeg?auto=compress&cs=tinysrgb&w=900';
-const artist1Image   = 'https://images.pexels.com/photos/9992820/pexels-photo-9992820.jpeg?auto=compress&cs=tinysrgb&w=900';
-const artist2Image   = 'https://images.pexels.com/photos/10586305/pexels-photo-10586305.jpeg?auto=compress&cs=tinysrgb&w=900';
-const artist3Image   = 'https://images.pexels.com/photos/3998412/pexels-photo-3998412.jpeg?auto=compress&cs=tinysrgb&w=900';
+/* ─── Images — hair, beauty, makeup, and bridal salon imagery ─────────── */
+const heroImage      = 'https://images.pexels.com/photos/20309789/pexels-photo-20309789.jpeg?auto=compress&cs=tinysrgb&w=1800';
+const interiorImage  = 'https://images.pexels.com/photos/7755557/pexels-photo-7755557.jpeg?auto=compress&cs=tinysrgb&w=1200';
+const beardImage     = 'https://images.pexels.com/photos/3065096/pexels-photo-3065096.jpeg?auto=compress&cs=tinysrgb&w=900';
+const colourImage    = 'https://images.pexels.com/photos/14615064/pexels-photo-14615064.jpeg?auto=compress&cs=tinysrgb&w=900';
+const groomImage     = 'https://images.pexels.com/photos/10279714/pexels-photo-10279714.jpeg?auto=compress&cs=tinysrgb&w=900';
+const artist1Image   = 'https://images.pexels.com/photos/33463732/pexels-photo-33463732.jpeg?auto=compress&cs=tinysrgb&w=900';
+const artist2Image   = 'https://images.pexels.com/photos/11894622/pexels-photo-11894622.jpeg?auto=compress&cs=tinysrgb&w=900';
+const artist3Image   = 'https://images.pexels.com/photos/7755226/pexels-photo-7755226.jpeg?auto=compress&cs=tinysrgb&w=900';
 
 const fallingTools = [
   { type: 'scissors', left: '7%',  delay: '0s',   duration: '8s',  rotate: '-18deg' },
@@ -41,7 +41,7 @@ const fallingTools = [
 function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <a className={`brand ${compact ? 'brand-compact' : ''}`} href="#home" aria-label="Jawed Habib Salon home">
-      <img className="brand-logo" src="/JawedHabibNobg.png" alt="Jawed Habib Salon" />
+      <img className="brand-logo" src="/JawedHabibNobg copy.png" alt="Jawed Habib Salon" />
     </a>
   );
 }
@@ -82,7 +82,7 @@ function App() {
           <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
             <a href="#about"    onClick={() => setMenuOpen(false)}>The salon</a>
             <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
-            <a href="#artists"  onClick={() => setMenuOpen(false)}>Our barbers</a>
+            <a href="#artists"  onClick={() => setMenuOpen(false)}>Our artists</a>
             <a href="#journal"  onClick={() => setMenuOpen(false)}>Reviews</a>
           </nav>
           <div className="nav-actions">
@@ -99,7 +99,7 @@ function App() {
 
       {/* ── HERO ── */}
       <section className="hero" id="home">
-        <img className="hero-image" src={heroImage} alt="Expert barber giving a precision haircut" />
+        <img className="hero-image" src={heroImage} alt="Stylist creating a beautiful salon look" />
         <div className="hero-shade" />
         <div className="hero-tools" aria-hidden="true">
           {fallingTools.map((tool, i) => {
@@ -113,16 +113,16 @@ function App() {
         </div>
         <div className="hero-content page-width">
           <p className="eyebrow hero-eyebrow"><span /> Rajbagh, Srinagar <span /></p>
-          <p className="hero-kicker">India's Best Salon — Men's Grooming</p>
+          <p className="hero-kicker">Kashmir's Best Salon — Hair &amp; Beauty</p>
           <h1>Jawed Habib<br /><em>Salon</em></h1>
-          <p className="hero-description">Award-winning precision haircuts, modern fades, expert beard grooming and premium hair treatments — crafted for the modern man.</p>
+          <p className="hero-description">Award-winning hair styling, beauty, makeup and premium treatments — crafted to help every guest look and feel their best.</p>
           <div className="hero-actions">
             <a className="button button-gold" href="tel:+919419195563">Book appointment <ArrowUpRight size={17} /></a>
             <a className="text-link light-link" href="https://wa.me/919419195563" target="_blank" rel="noreferrer">WhatsApp us <ArrowRight size={16} /></a>
           </div>
         </div>
         <div className="hero-bottom page-width">
-          <span>Haircuts <i /> Fades <i /> Beard <i /> Grooming</span>
+          <span>Hair <i /> Beauty <i /> Bridal <i /> Makeup</span>
           <a href="#about">Discover the salon <ArrowDown size={16} /></a>
         </div>
       </section>
@@ -131,9 +131,9 @@ function App() {
       <section className="intro section page-width" id="about">
         <div className="intro-aside reveal"><span className="vertical-label">THE JAWED HABIB STANDARD</span><span className="vertical-line" /></div>
         <div className="intro-copy reveal">
-          <p className="eyebrow">A cut above the rest</p>
-          <h2>Where precision meets <em>confidence.</em></h2>
-          <p className="large-copy">Jawed Habib Salon brings India's most trusted men's grooming expertise to Rajbagh, Srinagar. From award-winning precision cuts to expert beard sculpting and premium hair treatments — every visit is a masterclass in modern men's style.</p>
+          <p className="eyebrow">Beauty, perfected</p>
+          <h2>Where style meets <em>confidence.</em></h2>
+          <p className="large-copy">Jawed Habib Salon brings Kashmir's finest hair and beauty expertise to Rajbagh, Srinagar. From precision cuts and colour to bridal styling, makeup and premium hair treatments, every visit is tailored to your personal style.</p>
           <a className="text-link" href="#services">Explore our services <ArrowUpRight size={16} /></a>
         </div>
         <div className="intro-stamp reveal">
@@ -141,7 +141,7 @@ function App() {
             <Scissors size={27} strokeWidth={1} />
             <span>AWARD-WINNING</span>
             <strong>JAWED HABIB</strong>
-            <span>MEN'S SALON</span>
+            <span>BEAUTY SALON</span>
             <span>RAJBAGH · SRINAGAR</span>
           </div>
         </div>
@@ -151,18 +151,18 @@ function App() {
       <section className="services-section section" id="services">
         <div className="page-width">
           <div className="section-heading reveal">
-            <div><p className="eyebrow">The craft</p><h2>Precision, <em>every time.</em></h2></div>
-            <p>From a sharp fade to a hot-towel beard ritual — every service is built around the modern man.</p>
+            <div><p className="eyebrow">The menu</p><h2>Beauty, <em>beautifully done.</em></h2></div>
+            <p>From everyday styling to bridal beauty, every service is delivered with care, creativity and expert technique.</p>
           </div>
           <div className="service-grid">
-            <ServiceCard number="01" icon={<Scissors />}  title="Precision Cuts"  detail="Classic cuts · Fades · Crew cuts · Modern texture"       image={interiorImage} />
-            <ServiceCard number="02" icon={<UserRound />} title="Beard Grooming"  detail="Beard trims · Sculpting · Shaping · Hot towel shave"      image={beardImage}    />
-            <ServiceCard number="03" icon={<Droplets />}  title="Hair Colour"     detail="Men's colour · Grey coverage · Highlights · Toning"       image={colourImage}   />
-            <ServiceCard number="04" icon={<Wind />}      title="Hair Treatments" detail="Keratin · Smoothening · Scalp care · Hair spa for men"    image={groomImage}    />
+            <ServiceCard number="01" icon={<Scissors />}  title="Hair Styling"    detail="Cuts · Blowouts · Styling · Hair transformations"          image={interiorImage} />
+            <ServiceCard number="02" icon={<UserRound />} title="Bridal Beauty"   detail="Bridal hair · Makeup · Draping · Wedding-day styling"      image={beardImage}    />
+            <ServiceCard number="03" icon={<Droplets />}  title="Hair Colour"     detail="Colour · Highlights · Balayage · Glossing · Toning"       image={colourImage}   />
+            <ServiceCard number="04" icon={<Wind />}      title="Makeup & Beauty"  detail="Party makeup · Skin prep · Lashes · Occasion beauty"       image={groomImage}    />
           </div>
           <div className="service-footer reveal">
             <span><Check size={15} /> Walk-ins welcome</span>
-            <a className="text-link" href="tel:+919419195563">Find your cut <ArrowRight size={16} /></a>
+            <a className="text-link" href="tel:+919419195563">Find your style <ArrowRight size={16} /></a>
           </div>
         </div>
       </section>
@@ -170,17 +170,17 @@ function App() {
       {/* ── EXPERIENCE FEATURE ── */}
       <section className="feature section page-width">
         <div className="feature-image reveal">
-          <img src={interiorImage} alt="Barber at Jawed Habib Salon performing a precision cut" />
-          <div className="image-caption"><span>01 / 04</span><span>Inside Jawed Habib</span></div>
+          <img src={interiorImage} alt="Stylist creating a polished salon look" />
+          <div className="image-caption"><span>01 / 04</span><span>Inside Jawed Habib Salon</span></div>
         </div>
         <div className="feature-copy reveal">
           <p className="eyebrow">The experience</p>
-          <h2>Sharp tools.<br /><em>Sharper results.</em></h2>
-          <p>Sterilised equipment. Expert barbers. A clean, professional atmosphere built for men who value their time and appearance. Walk in. Walk out looking your best.</p>
+          <h2>Beautiful details.<br /><em>Lasting impressions.</em></h2>
+          <p>Professional products. Expert artists. A clean, welcoming atmosphere for every guest. Walk in, settle in and leave feeling polished, refreshed and confident.</p>
           <div className="feature-list">
             <span><strong>01</strong> One-on-one style consultation</span>
-            <span><strong>02</strong> Premium men's grooming products</span>
-            <span><strong>03</strong> Precision finish, every visit</span>
+            <span><strong>02</strong> Premium hair and beauty products</span>
+            <span><strong>03</strong> Bridal and occasion expertise</span>
           </div>
           <a className="button button-outline" href="tel:+919419195563">Plan your visit <ArrowUpRight size={16} /></a>
         </div>
@@ -190,13 +190,13 @@ function App() {
       <section className="artists section" id="artists">
         <div className="page-width">
           <div className="section-heading reveal">
-            <div><p className="eyebrow">The barbers</p><h2>Masters of <em>the craft.</em></h2></div>
-            <p>Our barbers are trained to the Jawed Habib standard — precision, care and expert technique.</p>
+            <div><p className="eyebrow">The artists</p><h2>Masters of <em>the craft.</em></h2></div>
+            <p>Our artists are trained to the Jawed Habib standard — creativity, care and expert technique.</p>
           </div>
           <div className="artist-grid">
-            <Artist name="Barber Ali"     role="Precision cuts & fades"      image={artist1Image} />
-            <Artist name="Barber Rashid"  role="Beard sculpting & styling"   image={artist2Image} />
-            <Artist name="Barber Salman"  role="Colour & hair treatments"    image={artist3Image} />
+            <Artist name="Razia"  role="Bridal hair & makeup artist" image={artist1Image} />
+            <Artist name="Sana"   role="Hair colour & styling artist" image={artist2Image} />
+            <Artist name="Aaliya" role="Beauty & occasion artist"    image={artist3Image} />
           </div>
         </div>
       </section>
@@ -204,8 +204,8 @@ function App() {
       {/* ── QUOTE ── */}
       <section className="quote-section section page-width" id="journal">
         <div className="quote-mark">"</div>
-        <blockquote>Not just a haircut.<br /><em>A standard. Every single time.</em></blockquote>
-        <div className="rating"><span>★★★★★</span><strong>4.9 / 5</strong><small>What our clients say</small></div>
+        <blockquote>Not just a service.<br /><em>A feeling you carry with you.</em></blockquote>
+        <div className="rating"><span>★★★★★</span><strong>4.9 / 5</strong><small>What our guests say</small></div>
       </section>
 
       {/* ── VISIT CTA ── */}
@@ -213,11 +213,11 @@ function App() {
         <div className="visit-card reveal">
           <div className="visit-content">
             <p className="eyebrow">Your next appointment</p>
-            <h2>Walk in sharp.<br /><em>Walk out sharper.</em></h2>
-            <p>Precision cuts · Fades · Beard · Grooming · Colour</p>
+            <h2>Feel beautiful.<br /><em>Leave unforgettable.</em></h2>
+            <p>Hair · Makeup · Bridal · Beauty · Colour</p>
             <a className="button button-gold" href="tel:+919419195563">Book appointment <CalendarDays size={16} /></a>
           </div>
-          <div className="visit-image"><img src={heroImage} alt="Precision haircut at Jawed Habib Salon" /></div>
+          <div className="visit-image"><img src={heroImage} alt="Hair and beauty styling at Jawed Habib Salon" /></div>
         </div>
       </section>
 
@@ -226,7 +226,7 @@ function App() {
         <div className="page-width">
           <div className="footer-top">
             <Logo compact />
-            <p>India's Best Salon<br />Men's Precision Grooming · Rajbagh, Srinagar</p>
+            <p>Kashmir's Best Salon<br />Hair · Beauty · Bridal · Rajbagh, Srinagar</p>
             <a className="footer-cta" href="https://wa.me/919419195563" target="_blank" rel="noreferrer">WhatsApp us <ArrowUpRight size={16} /></a>
           </div>
           <div className="footer-grid">
