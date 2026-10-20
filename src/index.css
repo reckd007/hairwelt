@@ -13,8 +13,8 @@ button { color: inherit; font: inherit; }
 .navbar { position: absolute; top: 0; z-index: 10; width: 100%; color: #f8f2e7; }
 .nav-inner { width: min(1320px, calc(100% - 64px)); height: 94px; margin: auto; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.18); }
 .brand { display: flex; align-items: center; gap: 0; }
-.brand-logo { height: 88px; width: auto; max-width: 360px; object-fit: contain; display: block; filter: invert(1); transition: filter .45s ease; }
-.app.light .brand-logo { filter: invert(0); }
+.brand-logo { height: 88px; width: auto; max-width: 360px; object-fit: contain; display: block; transition: filter .45s ease; }
+.app.light .brand-logo { filter: invert(1); }
 .nav-links { display: flex; gap: 34px; margin-left: auto; margin-right: 54px; font-size: 12px; color: rgba(255,255,255,.7); }
 .nav-links a, .text-link, .footer-grid a { transition: color .25s ease; }
 .nav-links a:hover, .footer-grid a:hover { color: var(--gold-light); }
@@ -126,8 +126,6 @@ blockquote { font: 500 clamp(36px, 5vw, 62px)/1.1 'Playfair Display', serif; let
 .footer-grid a { display: flex; align-items: center; gap: 6px; width: fit-content; }
 .instagram-mark { width: 15px; height: 15px; flex: 0 0 auto; color: var(--gold-light); }
 .instagram-link { color: var(--gold-light) !important; }
-.facebook-mark { width: 15px; height: 15px; flex: 0 0 auto; color: var(--gold-light); }
-.facebook-link { color: var(--gold-light) !important; }
 .footer-social { display: flex; gap: 14px; }
 .footer-social a { color: var(--gold-light); width: auto; }
 .footer-grid strong { color: var(--text); font-weight: 500; }
